@@ -5,7 +5,7 @@ A mostly source-generated, blittable bindings library wrapping [libopenmpt](http
 ### Native libraries
 By default, the included native libraries are copied to the build output directory, to disable this, add `ExcludeAssets="native"` to the `PackageReference` in your csproj.
 
-The nuget package only includes native libraries for Windows x64, packages for other platforms can be found on the [OpenMPT wiki](https://wiki.openmpt.org/Libopenmpt#Distribution_packages).
+The nuget package includes native libraries for Windows x64, Linux x64, macOS x64 and macOS arm64, packages for other platforms can be found on the [OpenMPT wiki](https://wiki.openmpt.org/Libopenmpt#Distribution_packages).
 
 
 Building
