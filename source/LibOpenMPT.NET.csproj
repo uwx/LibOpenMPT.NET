@@ -13,6 +13,7 @@
     <LangVersion>12</LangVersion>
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
+    <PackageId>Maxine.LibOpenMPT.NET</PackageId>
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>

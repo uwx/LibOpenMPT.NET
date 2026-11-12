@@ -7,6 +7,8 @@ By default, the included native libraries are copied to the build output directo
 
 The nuget package includes native libraries for Windows x64, Linux x64, macOS x64 and macOS arm64, packages for other platforms can be found on the [OpenMPT wiki](https://wiki.openmpt.org/Libopenmpt#Distribution_packages).
 
+This fork publishes the package as `Maxine.LibOpenMPT.NET`.
+
 
 Building
 --------

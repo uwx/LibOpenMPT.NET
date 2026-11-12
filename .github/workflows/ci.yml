@@ -185,7 +185,7 @@ jobs:
         run:  dotnet pack -c Release /p:ContinuousIntegrationBuild=true /p:Version=${{ needs.check-upstream.outputs.version }} /p:NativeLibsDir="${{ github.workspace }}\native"
 
       - name: Upload nuget package
-        run:  dotnet nuget push bin/LibOpenMPT.NET/Release/LibOpenMPT.NET.${{ needs.check-upstream.outputs.version }}.nupkg -k ${{ github.token }} -s https://nuget.pkg.github.com/${{ github.event.repository.owner.login }}/index.json
+        run:  dotnet nuget push bin/LibOpenMPT.NET/Release/Maxine.LibOpenMPT.NET.${{ needs.check-upstream.outputs.version }}.nupkg -k ${{ github.token }} -s https://nuget.pkg.github.com/${{ github.event.repository.owner.login }}/index.json
 
   update-version:
     needs: [check-upstream, build]
