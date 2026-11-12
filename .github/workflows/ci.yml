@@ -18,6 +18,8 @@ env:
 permissions:
   contents: write
   packages: write
+  actions: write
+  deployments: write
 
 jobs:
   check-upstream:
@@ -196,7 +198,7 @@ jobs:
         env:
           CURRENT_UPSTREAM_VERSION: ${{ needs.check-upstream.outputs.version }}
         with:
-          github-token: ${{ secrets.PAT_Variable_ReadWrite }}
+          github-token: ${{ github.token }}
           script: |
             await github.rest.actions.updateRepoVariable({
                 owner: context.payload.repository.owner.login,
